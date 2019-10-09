@@ -31,7 +31,7 @@ if(isset($_POST['forminscription']))
 							{
 								$insertmbr = $bdd->prepare("INSERT INTO membres(pseudo, mail, mdp)  VALUES(?, ?, ?)");
 								$insertmbr->execute(array($pseudo, $mail, $mdp));
-								$erreur = "Votre compte a bien été créé";
+								$erreur = "Votre compte a bien été créé. <a href=\"connexion.php\">Me connecter</a>";
 							}
 							else
 							{
@@ -71,20 +71,21 @@ if(isset($_POST['forminscription']))
   <head>
   	<link rel="stylesheet" href="fixed.css">
     <meta charset="utf-8">
-    <title>Pantheon Francais</title>
+    <title>Inscription</title>
   </head>
 
   <body>
   	<div class="topbar">
-  		<img src="logopti.png" >
+  		<a href="index"><img src="logopti.png" ></a>
   	</div>
 
   	<div class="menu">
-  		<a href="#">Actualité</a>
-  		<a href="#">Nos Jeux</a>
+	    <a href="index.php">Actualité</a>
+  		<a href="#">Notre équipe</a>
   		<a href="#">Notre histoire</a>
   		<a href="#">F.A.Q.</a>
-  		<a href="#">Règlement</a>			
+  		<a href="#">Galerie</a>
+		<a href="inscription.php">S'inscrire</a>		
   	</div>
   	<div class="content">
 		  <div class="main">
@@ -137,6 +138,7 @@ if(isset($_POST['forminscription']))
 						<td>
 							<br />
 							<input type="submit" name="forminscription" value="S'inscrire"	>
+							<p>Vous avez déja un compte ? <a href="connexion">Se connecter.</a></p>
 						</td>
 					</tr>
 				</table>

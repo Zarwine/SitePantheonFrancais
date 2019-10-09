@@ -8,15 +8,16 @@
 
   <body>
   	<div class="topbar">
-  		<img src="logopti.png" >
+	  <a href="index"><img src="logopti.png" ></a>
   	</div>
 
   	<div class="menu">
-  		<a href="#">Actualité</a>
-  		<a href="#">Nos Jeux</a>
+  		<a href="index.php">Actualité</a>
+  		<a href="#">Notre équipe</a>
   		<a href="#">Notre histoire</a>
   		<a href="#">F.A.Q.</a>
-  		<a href="#">Règlement</a>
+  		<a href="#">Galerie</a>
+		<a href="inscription.php">S'inscrire</a>
   	</div>
   	<div class="content">
 		  <div class="main">
