@@ -88,7 +88,7 @@ if(isset($_SESSION['id']))
                 
                 </div>
             <div class="sidebar">
-                <iframe src="https://discordapp.com/widget?id=382533200028631041&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+                <iframe src="https://discordapp.com/widget?id=382533200028631041&theme=dark" height="500" allowtransparency="true" frameborder="0"></iframe>
             </div>
         </div>
         
